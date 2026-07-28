@@ -1,3 +1,5 @@
+import { Check, X } from "lucide-react";
+
 export default function Difference() {
   const left = [
     "Recorded videos",
@@ -19,45 +21,51 @@ export default function Difference() {
   ];
 
   return (
-    <section className="max-w-7xl mx-auto px-6 py-24">
+    <section className="max-w-[1450px] mx-auto px-8 py-16">
 
       {/* Badge */}
       <div className="flex justify-center">
-        <span className="px-5 py-2 rounded-full border border-[#A7F3D0] bg-[#ECFDF5] text-[15px] font-medium">
+        <span className="rounded-full border border-[#A7F3D0] bg-[#ECFDF5] px-4 py-1 text-[11px] font-medium text-[#0F172A]">
           Why GrowthYari
         </span>
       </div>
 
       {/* Heading */}
-      <h2 className="mt-6 text-center text-[58px] leading-[64px] font-extrabold text-[#0F172A]">
+      <h2 className="mt-5 text-center text-[50px] font-semibold leading-[1] tracking-[-0.03em] text-[#0F172A]">
         What makes it different.
       </h2>
 
       {/* Cards */}
-      <div className="mt-16 grid lg:grid-cols-2 gap-8">
+      <div className="mt-12 grid gap-6 lg:grid-cols-2">
 
-        {/* Left */}
-        <div className="rounded-[34px] border border-gray-200 bg-white p-10">
+        {/* LEFT */}
+        <div className="rounded-[28px] border border-[#E5E7EB] bg-white p-6">
 
-          <div className="flex justify-between items-center mb-10">
-            <h3 className="text-[22px] font-bold text-[#475569]">
+          <div className="mb-6 flex items-center justify-between">
+
+            <h3 className="text-[16px] font-semibold text-[#475569]">
               Traditional courses
             </h3>
 
-            <span className="px-5 py-2 rounded-full bg-red-50 text-red-500 border border-red-200 font-semibold">
+            <span className="rounded-full border border-red-200 bg-red-50 px-4 py-1.5 text-[11px] font-semibold text-red-500">
               Passive
             </span>
+
           </div>
 
-          <div className="space-y-5">
+          <div className="space-y-3">
             {left.map((item) => (
               <div
                 key={item}
-                className="rounded-2xl bg-[#F8FAFC] px-6 py-5 flex items-center gap-5"
+                className="flex h-[50px] items-center gap-3 rounded-xl bg-[#F8FAFC] px-5"
               >
-                <span className="text-red-500 text-2xl">✕</span>
+                <X
+                  size={17}
+                  strokeWidth={2}
+                  className="text-red-500 flex-shrink-0"
+                />
 
-                <span className="text-[18px] text-[#475569] line-through">
+                <span className="text-[13px] text-[#475569] line-through">
                   {item}
                 </span>
               </div>
@@ -66,30 +74,34 @@ export default function Difference() {
 
         </div>
 
-        {/* Right */}
-        <div className="rounded-[34px] p-10 bg-gradient-to-br from-[#0F172A] via-[#12233F] to-[#065F5B]">
+        {/* RIGHT */}
+        <div className="rounded-[28px] bg-gradient-to-br from-[#121E39] via-[#112A45] to-[#0A6B66] p-6">
 
-          <div className="flex justify-between items-center mb-10">
+          <div className="mb-6 flex items-center justify-between">
 
-            <h3 className="text-[22px] font-bold text-white">
+            <h3 className="text-[16px] font-semibold text-white">
               GrowthYari
             </h3>
 
-            <span className="px-5 py-2 rounded-full bg-[#10B981] text-[#0F172A] font-bold">
+            <span className="rounded-full bg-[#10C77B] px-4 py-1.5 text-[11px] font-semibold text-[#0F172A]">
               Active
             </span>
 
           </div>
 
-          <div className="space-y-5">
+          <div className="space-y-3">
             {right.map((item) => (
               <div
                 key={item}
-                className="rounded-2xl bg-[#1E3650]/70 px-6 py-5 flex items-center gap-5"
+                className="flex h-[50px] items-center gap-3 rounded-xl bg-[#203B57]/90 px-5"
               >
-                <span className="text-[#10B981] text-2xl">✓</span>
+                <Check
+                  size={17}
+                  strokeWidth={2}
+                  className="text-[#16E39A] flex-shrink-0"
+                />
 
-                <span className="text-[18px] text-white">
+                <span className="text-[13px] text-white">
                   {item}
                 </span>
               </div>

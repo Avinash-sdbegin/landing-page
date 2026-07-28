@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-
 export default function Apply() {
   return (
     <div className="min-h-screen bg-[#F7F8FC]">
@@ -8,15 +7,12 @@ export default function Apply() {
       <header className="w-full flex justify-center pt-4 px-5">
         <nav className="w-full max-w-7xl bg-white rounded-full border border-gray-200 shadow-sm px-7 py-3 flex items-center justify-between">
 
-          <Link to="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-gradient-to-r from-[#0F172A] to-[#059669] flex items-center justify-center text-white font-bold">
-              G
-            </div>
-
-            <span className="text-xl font-bold text-[#0F172A]">
-              GrowthYari
-            </span>
-          </Link>
+          <Link
+            to="/apply2"
+            className="px-10 py-4 rounded-xl text-white font-semibold bg-gradient-to-r from-[#0F172A] to-[#10B981] inline-flex items-center justify-center"
+            >
+            Continue →
+            </Link>
 
           <div className="text-sm text-gray-500">
             Cohort Application
@@ -124,11 +120,12 @@ export default function Apply() {
               ← Back
             </Link>
 
-            <button
-              className="px-10 py-4 rounded-xl text-white font-semibold bg-gradient-to-r from-[#0F172A] to-[#10B981]"
+            <Link
+            to="/apply2"
+            className="px-10 py-4 rounded-xl text-white font-semibold bg-gradient-to-r from-[#0F172A] to-[#10B981] inline-flex items-center justify-center"
             >
-              Continue →
-            </button>
+            Continue →
+            </Link>
 
           </div>
 
