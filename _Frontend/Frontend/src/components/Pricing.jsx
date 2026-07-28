@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export default function Pricing() {
   const groupFeatures = [
     "Live small-cohort sessions",
@@ -89,9 +90,12 @@ export default function Pricing() {
 
           </div>
 
-          <button className="mt-7 w-full rounded-full border border-gray-300 py-3 text-[16px] font-semibold transition hover:bg-gray-50">
+          <Link
+            to="/apply"
+            className="mt-7 w-full rounded-full border border-gray-300 py-3 text-[16px] font-semibold transition hover:bg-gray-50 text-center block"
+            >
             Apply Now →
-          </button>
+            </Link>
 
         </div>
 
@@ -148,9 +152,12 @@ export default function Pricing() {
 
           </div>
 
-          <button className="mt-7 w-full rounded-full bg-white py-3 text-[16px] font-semibold text-[#0F172A] transition hover:bg-gray-100">
+          <Link
+            to="/apply"
+            className="mt-7 w-full rounded-full bg-white py-3 text-[16px] font-semibold text-[#0F172A] transition hover:bg-gray-100 text-center block"
+            >
             Apply for 1:1 →
-          </button>
+            </Link>
 
         </div>
 
