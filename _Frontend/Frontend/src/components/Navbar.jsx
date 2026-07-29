@@ -25,7 +25,7 @@ export default function Navbar() {
 
         {/* Apply Button */}
         <Link
-          to="/apply"
+          to="/form1"
           className="px-6 py-2 rounded-full text-[15px] font-semibold text-white bg-gradient-to-r from-[#0F172A] to-[#059669] hover:scale-105 transition"
         >
           Apply Now

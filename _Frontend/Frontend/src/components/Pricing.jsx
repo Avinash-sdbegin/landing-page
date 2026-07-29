@@ -91,7 +91,7 @@ export default function Pricing() {
           </div>
 
           <Link
-            to="/apply"
+            to="/form1"
             className="mt-7 w-full rounded-full border border-gray-300 py-3 text-[16px] font-semibold transition hover:bg-gray-50 text-center block"
             >
             Apply Now →
@@ -153,7 +153,7 @@ export default function Pricing() {
           </div>
 
           <Link
-            to="/apply"
+            to="/form1"
             className="mt-7 w-full rounded-full bg-white py-3 text-[16px] font-semibold text-[#0F172A] transition hover:bg-gray-100 text-center block"
             >
             Apply for 1:1 →

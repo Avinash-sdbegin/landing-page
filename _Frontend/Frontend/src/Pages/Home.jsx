@@ -22,7 +22,9 @@ export default function Home() {
       <ProgramHighlights />
       <LiveSession />
       <FeatureStrip />
-      <Problem />
+      <section id="problem">
+        <Problem />
+      </section>
       <Approach />
       <Audience />
       <Outcomes />
