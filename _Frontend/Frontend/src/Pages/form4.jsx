@@ -5,6 +5,7 @@ import axios from "axios";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
+const API_URL = "https://registration.growthyari.com";
 export default function Apply4() {
   const navigate = useNavigate();
 
@@ -62,7 +63,7 @@ export default function Apply4() {
       };
 
       const res = await axios.post(
-        "http://localhost:5000/api/apply",
+        `${API_URL}/api/apply`,
         payload
       );
 
@@ -75,7 +76,7 @@ export default function Apply4() {
       alert("Something went wrong. Please try again.");
     }
   };
-  
+
   return (
     <div className="min-h-screen bg-[#FAFBFC]">
 
