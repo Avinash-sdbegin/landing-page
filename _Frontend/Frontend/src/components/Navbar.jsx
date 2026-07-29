@@ -5,10 +5,12 @@ export default function Navbar() {
     <header className="w-full flex justify-center pt-2 px-6 sticky top-0 z-50">
       <nav className="w-full max-w-6xl bg-white rounded-full border border-gray-200 shadow-md px-5 py-2.5 flex items-center justify-between">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2.5">
-          <div className="w-8 h-8 rounded-full bg-gradient-to-r from-[#0F172A] to-[#059669] flex items-center justify-center text-white font-bold text-sm">
-            G
-          </div>
+        <Link to="/" className="flex items-center gap-0">
+          <img
+            src="/logo.png"
+            alt="GrowthYari Logo"
+            className="w-14 h-10 rounded-full object-cover"
+          />
 
           <span className="text-[16px] font-bold text-[#0F172A]">
             GrowthYari

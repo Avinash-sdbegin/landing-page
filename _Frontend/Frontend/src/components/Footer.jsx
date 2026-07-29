@@ -4,21 +4,23 @@ export default function Footer() {
       <div className="flex flex-col md:flex-row justify-between items-center">
 
         {/* Logo */}
-        <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-full bg-gradient-to-r from-[#071C34] to-[#10B981] flex items-center justify-center text-white font-bold text-sm">
-            G
-          </div>
+      <div className="flex items-center gap-0">
+        <img
+          src="/logo.png"
+          alt="GrowthYari Logo"
+          className="w-14 h-10 object-cover"
+        />
 
-          <div>
-            <h3 className="text-lg font-bold text-[#0F172A] leading-none">
-              GrowthYari
-            </h3>
+        <div>
+          <h3 className="text-lg font-bold text-[#0F172A] leading-none">
+            GrowthYari
+          </h3>
 
-            <p className="text-xs text-[#64748B] mt-0.5">
-              Professional Growth Accelerator
-            </p>
-          </div>
+          <p className="text-xs text-[#64748B] mt-0.5">
+            Professional Growth Accelerator
+          </p>
         </div>
+      </div>
 
         {/* Links */}
         <div className="flex gap-6 text-sm text-[#475569] my-4 md:my-0">

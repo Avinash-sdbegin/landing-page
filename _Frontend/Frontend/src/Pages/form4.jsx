@@ -72,8 +72,21 @@ export default function Apply4() {
         navigate("/submitted_form");
       }
     } catch (error) {
-      console.error(error);
-      alert("Something went wrong. Please try again.");
+      console.error("Full Error:", error);
+
+      if (error.response) {
+        console.log("Response:", error.response);
+
+        alert(
+          `Status: ${error.response.status}\n\n${JSON.stringify(error.response.data)}`
+        );
+      } else if (error.request) {
+        console.log("Request:", error.request);
+
+        alert("Network Error: No response received from server.");
+      } else {
+        alert(error.message);
+      }
     }
   };
 
