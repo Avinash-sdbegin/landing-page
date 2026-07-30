@@ -26,23 +26,23 @@ export default function ProgramHighlights() {
   ];
 
   return (
-    <section className="py-6">
-      <div className="mx-auto flex max-w-[1080px] flex-wrap items-center justify-center gap-4">
+    <section className="py-5">
+      <div className="mx-auto flex max-w-[1080px] items-center justify-center gap-3">
         {items.map((item) => {
           const Icon = item.icon;
 
           return (
             <div
               key={item.text}
-              className="flex h-[54px] min-w-[275px] items-center justify-center gap-3 rounded-full border border-[#DCE3EB] bg-white px-7 shadow-[0_1px_3px_rgba(15,23,42,0.04)]"
+              className="flex h-[42px] min-w-[190px] items-center justify-center gap-2 rounded-full border border-[#DCE3EB] bg-white px-5 shadow-[0_1px_3px_rgba(15,23,42,0.04)]"
             >
               <Icon
-                size={19}
+                size={15}
                 strokeWidth={2}
                 className="text-[#10B981]"
               />
 
-              <span className="text-[17px] font-medium text-[#0F172A]">
+              <span className="text-[14px] font-medium text-[#0F172A] whitespace-nowrap">
                 {item.text}
               </span>
             </div>
