@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 export default function Footer() {
   return (
     <footer className="max-w-7xl mx-auto px-6 pt-6 pb-12">
@@ -24,10 +26,19 @@ export default function Footer() {
 
         {/* Links */}
         <div className="flex gap-6 text-sm text-[#475569] my-4 md:my-0">
-          <a href="#">Program</a>
-          <a href="#">Pricing</a>
-          <a href="#">FAQ</a>
-          <a href="#">Apply</a>
+          <HashLink smooth to="/#program">
+            Program
+          </HashLink>
+          <HashLink smooth to="/#pricing">
+            Pricing
+          </HashLink>
+          <HashLink smooth to="/#faq">
+            FAQ
+          </HashLink>
+
+          <Link to="/form1">
+            Apply
+          </Link>
         </div>
 
         {/* Copyright */}

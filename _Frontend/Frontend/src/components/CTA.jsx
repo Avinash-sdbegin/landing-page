@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export default function CTA() {
   return (
     <section className="px-6 pt-12 pb-16">
@@ -23,9 +24,12 @@ export default function CTA() {
         </p>
 
         {/* Button */}
-        <button className="mt-8 px-8 py-3 rounded-full bg-white text-[#071C34] text-[16px] font-semibold hover:scale-105 transition duration-300">
-          Apply for Next Cohort →
-        </button>
+        <Link
+        to="/form1"
+        className="inline-block mt-8 px-8 py-3 rounded-full bg-white text-[#071C34] text-[16px] font-semibold hover:scale-105 transition duration-300"
+      >
+        Apply for Next Cohort →
+      </Link>
 
       </div>
     </section>

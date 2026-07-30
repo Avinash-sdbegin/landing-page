@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import { HashLink } from "react-router-hash-link";
 export default function Navbar() {
   return (
     <header className="w-full flex justify-center pt-2 px-6 sticky top-0 z-50">
@@ -19,10 +19,10 @@ export default function Navbar() {
 
         {/* Nav Links */}
         <ul className="hidden lg:flex items-center gap-10 text-[14px] font-medium text-[#4B5563]">
-          <li><Link to="/">Home</Link></li>
-          <li><a href="#program">Program</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#faq">FAQ</a></li>
+          <li><HashLink smooth to="/#home">Home</HashLink></li>
+          <li><HashLink smooth to="/#program">Program</HashLink></li>
+          <li><HashLink smooth to="/#pricing">Pricing</HashLink></li>
+          <li><HashLink smooth to="/#faq">FAQ</HashLink></li>
         </ul>
 
         {/* Apply Button */}

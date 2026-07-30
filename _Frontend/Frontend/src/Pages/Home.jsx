@@ -18,23 +18,37 @@ export default function Home() {
   return (
     <>
       <Navbar />
+    <section id="home">
       <Hero />
+    </section>
+    <section id="program">
       <ProgramHighlights />
-      <LiveSession />
-      <FeatureStrip />
-      <section id="problem">
-        <Problem />
-      </section>
-      <Approach />
-      <Audience />
-      <Outcomes />
-      <Difference />
-      <Process />
-      <Portfolio />
+    </section>
+
+    <LiveSession />
+    <FeatureStrip />
+
+    <section id="problem">
+      <Problem />
+    </section>
+
+    <Approach />
+    <Audience />
+    <Outcomes />
+    <Difference />
+    <Process />
+    <Portfolio />
+
+    <section id="pricing">
       <Pricing />
+    </section>
+
+    <section id="faq">
       <FAQ />
-      <CTA />
-      <Footer />
+    </section>
+
+    <CTA />
+    <Footer />
     </>
   );
 }
